@@ -12,11 +12,11 @@ export class InMemoryQuestionCommentsRepository
 	}
 
 	async findById(id: string) {
-		const questionCommentt = this.items.find(item => item.id.toString() === id);
+		const questionComment = this.items.find(item => item.id.toString() === id);
 
-		if (!questionCommentt) return null;
+		if (!questionComment) return null;
 
-		return questionCommentt;
+		return questionComment;
 	}
 
 	async delete(questionComment: QuestionComment) {
